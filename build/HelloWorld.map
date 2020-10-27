@@ -1,0 +1,1100 @@
+     VMA      LMA     Size Align Out     In      Symbol
+       0        0        0     1 _estack = 0x20005000
+       0        0        0     1 _Min_Heap_Size = 0x200
+       0        0        0     1 _Min_Stack_Size = 0x400
+ 8000000  8000000      10c     1 .isr_vector
+ 8000000  8000000        0     1         . = ALIGN ( 4 )
+ 8000000  8000000      10c     1         build/startup_stm32f103xb.o:(.isr_vector)
+ 8000000  8000000        0     1                 g_pfnVectors
+ 800010c  800010c        0     1         . = ALIGN ( 4 )
+ 8000110  8000110     372c    16 .text
+ 8000110  8000110        0     1         . = ALIGN ( 4 )
+ 8000110  8000110       40     4         /home/will/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m+fp/hard/crtbegin.o:(.text)
+ 8000110  8000110        0     1                 $t
+ 8000111  8000111        0     1                 __do_global_dtors_aux
+ 8000128  8000128        0     1                 $d
+ 8000134  8000134        0     1                 $t
+ 8000135  8000135        0     1                 frame_dummy
+ 8000144  8000144        0     1                 $d
+ 8000150  8000150       8c     4         build/RTOS/systemView/SEGGER/SEGGER_RTT_ASM_ARMv7M.o:(.text)
+ 8000150  8000150        0     1                 $t.0
+ 8000151  8000151        0     1                 SEGGER_RTT_ASM_WriteSkipNoLock
+ 8000176  8000176        0     1                 _Case4
+ 800017c  800017c        0     1                 _LoopCopyStraight
+ 8000194  8000194        0     1                 _CSDone
+ 800019c  800019c        0     1                 _CheckCase2
+ 80001a6  80001a6        0     1                 _LoopCopyBeforeWrapAround
+ 80001b6  80001b6        0     1                 _LoopCopyAfterWrapAround
+ 80001c2  80001c2        0     1                 _No2ChunkNeeded
+ 80001ca  80001ca        0     1                 _CheckCase4
+ 80001d2  80001d2        0     1                 _Case3
+ 80001d8  80001d8        0     1                 $d.1
+ 80001dc  80001dc       16     2         build/RTOS/FreeRTOS/list.o:(.text.vListInitialise)
+ 80001dc  80001dc        0     1                 $t.0
+ 80001dd  80001dd       16     1                 vListInitialise
+ 80001f2  80001f2        6     2         build/RTOS/FreeRTOS/list.o:(.text.vListInitialiseItem)
+ 80001f2  80001f2        0     1                 $t.1
+ 80001f3  80001f3        6     1                 vListInitialiseItem
+ 80001f8  80001f8       1c     2         build/RTOS/FreeRTOS/list.o:(.text.vListInsertEnd)
+ 80001f8  80001f8        0     1                 $t.2
+ 80001f9  80001f9       1c     1                 vListInsertEnd
+ 8000214  8000214       3e     4         build/RTOS/FreeRTOS/list.o:(.text.vListInsert)
+ 8000214  8000214        0     1                 $t.3
+ 8000215  8000215       3e     1                 vListInsert
+ 8000252  8000252       24     2         build/RTOS/FreeRTOS/list.o:(.text.uxListRemove)
+ 8000252  8000252        0     1                 $t.4
+ 8000253  8000253       24     1                 uxListRemove
+ 8000276  8000276       7a     2         build/RTOS/FreeRTOS/queue.o:(.text.xQueueGenericReset)
+ 8000276  8000276        0     1                 $t.0
+ 8000277  8000277       7a     1                 xQueueGenericReset
+ 80002f0  80002f0       72     2         build/RTOS/FreeRTOS/queue.o:(.text.xQueueGenericCreateStatic)
+ 80002f0  80002f0        0     1                 $t.1
+ 80002f1  80002f1       72     1                 xQueueGenericCreateStatic
+ 8000364  8000364      1a0     4         build/RTOS/FreeRTOS/queue.o:(.text.xQueueGenericSend)
+ 8000364  8000364        0     1                 $t.4
+ 8000365  8000365      1a0     1                 xQueueGenericSend
+ 8000504  8000504       82     2         build/RTOS/FreeRTOS/queue.o:(.text.prvCopyDataToQueue)
+ 8000504  8000504        0     1                 $t.8
+ 8000505  8000505       82     1                 prvCopyDataToQueue
+ 8000588  8000588       78     4         build/RTOS/FreeRTOS/queue.o:(.text.prvUnlockQueue)
+ 8000588  8000588        0     1                 $t.9
+ 8000589  8000589       78     1                 prvUnlockQueue
+ 8000600  8000600       c2     2         build/RTOS/FreeRTOS/queue.o:(.text.xQueueGenericSendFromISR)
+ 8000600  8000600        0     1                 $t.10
+ 8000601  8000601       c2     1                 xQueueGenericSendFromISR
+ 80006c4  80006c4      194     4         build/RTOS/FreeRTOS/queue.o:(.text.xQueueReceive)
+ 80006c4  80006c4        0     1                 $t.12
+ 80006c5  80006c5      194     1                 xQueueReceive
+ 8000858  8000858       20     2         build/RTOS/FreeRTOS/queue.o:(.text.prvCopyDataFromQueue)
+ 8000858  8000858        0     1                 $t.13
+ 8000859  8000859       20     1                 prvCopyDataFromQueue
+ 8000878  8000878       3c     4         build/RTOS/FreeRTOS/queue.o:(.text.vQueueAddToRegistry)
+ 8000878  8000878        0     1                 $t.24
+ 8000879  8000879       3c     1                 vQueueAddToRegistry
+ 80008b4  80008b4       50     2         build/RTOS/FreeRTOS/queue.o:(.text.vQueueWaitForMessageRestricted)
+ 80008b4  80008b4        0     1                 $t.26
+ 80008b5  80008b5       50     1                 vQueueWaitForMessageRestricted
+ 8000904  8000904       1c     2         /home/will/gcc-arm-none-eabi-9-2019-q4-major/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memcpy-stub.o):(.text.memcpy)
+ 8000904  8000904        0     1                 $t
+ 8000905  8000905       1c     1                 memcpy
+ 8000920  8000920       10     2         /home/will/gcc-arm-none-eabi-9-2019-q4-major/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memset.o):(.text.memset)
+ 8000920  8000920        0     1                 $t
+ 8000921  8000921       10     1                 memset
+ 8000930  8000930      1ec     4         build/RTOS/FreeRTOS/tasks.o:(.text.xTaskCreateStatic)
+ 8000930  8000930        0     1                 $t.0
+ 8000931  8000931      1ec     1                 xTaskCreateStatic
+ 8000b1c  8000b1c       10     2         build/RTOS/FreeRTOS/tasks.o:(.text.vTaskSuspendAll)
+ 8000b1c  8000b1c        0     1                 $t.3
+ 8000b1d  8000b1d       10     1                 vTaskSuspendAll
+ 8000b2c  8000b2c       ae     2         build/RTOS/FreeRTOS/tasks.o:(.text.prvAddCurrentTaskToDelayedList)
+ 8000b2c  8000b2c        0     1                 $t.4
+ 8000b2d  8000b2d       ae     1                 prvAddCurrentTaskToDelayedList
+ 8000bdc  8000bdc      154     4         build/RTOS/FreeRTOS/tasks.o:(.text.xTaskResumeAll)
+ 8000bdc  8000bdc        0     1                 $t.5
+ 8000bdd  8000bdd      154     1                 xTaskResumeAll
+ 8000d30  8000d30       4e     2         build/RTOS/FreeRTOS/tasks.o:(.text.vTaskDelay)
+ 8000d30  8000d30        0     1                 $t.6
+ 8000d31  8000d31       4e     1                 vTaskDelay
+ 8000d7e  8000d7e       98     2         build/RTOS/FreeRTOS/tasks.o:(.text.vTaskSwitchContext)
+ 8000d7e  8000d7e        0     1                 $t.11
+ 8000d7f  8000d7f       98     1                 vTaskSwitchContext
+ 8000e16  8000e16       94     2         build/RTOS/FreeRTOS/tasks.o:(.text.vTaskStartScheduler)
+ 8000e16  8000e16        0     1                 $t.14
+ 8000e17  8000e17       94     1                 vTaskStartScheduler
+ 8000eac  8000eac       6a     4         build/RTOS/FreeRTOS/tasks.o:(.text.prvIdleTask)
+ 8000eac  8000eac        0     1                 $t.15
+ 8000ead  8000ead       6a     1                 prvIdleTask
+ 8000f18  8000f18      172     4         build/RTOS/FreeRTOS/tasks.o:(.text.xTaskIncrementTick)
+ 8000f18  8000f18        0     1                 $t.17
+ 8000f19  8000f19      172     1                 xTaskIncrementTick
+ 800108a  800108a        c     2         build/RTOS/FreeRTOS/tasks.o:(.text.xTaskGetTickCount)
+ 800108a  800108a        0     1                 $t.18
+ 800108b  800108b        c     1                 xTaskGetTickCount
+ 8001096  8001096       14     2         build/RTOS/FreeRTOS/tasks.o:(.text.xTaskGetTickCountFromISR)
+ 8001096  8001096        0     1                 $t.19
+ 8001097  8001097       14     1                 xTaskGetTickCountFromISR
+ 80010aa  80010aa       2e     2         build/RTOS/FreeRTOS/tasks.o:(.text.vTaskPlaceOnEventList)
+ 80010aa  80010aa        0     1                 $t.23
+ 80010ab  80010ab       2e     1                 vTaskPlaceOnEventList
+ 80010d8  80010d8       46     2         build/RTOS/FreeRTOS/tasks.o:(.text.vTaskPlaceOnEventListRestricted)
+ 80010d8  80010d8        0     1                 $t.25
+ 80010d9  80010d9       46     1                 vTaskPlaceOnEventListRestricted
+ 800111e  800111e       8a     2         build/RTOS/FreeRTOS/tasks.o:(.text.xTaskRemoveFromEventList)
+ 800111e  800111e        0     1                 $t.26
+ 800111f  800111f       8a     1                 xTaskRemoveFromEventList
+ 80011a8  80011a8       1a     2         build/RTOS/FreeRTOS/tasks.o:(.text.vTaskInternalSetTimeOutState)
+ 80011a8  80011a8        0     1                 $t.29
+ 80011a9  80011a9       1a     1                 vTaskInternalSetTimeOutState
+ 80011c2  80011c2       72     2         build/RTOS/FreeRTOS/tasks.o:(.text.xTaskCheckForTimeOut)
+ 80011c2  80011c2        0     1                 $t.30
+ 80011c3  80011c3       72     1                 xTaskCheckForTimeOut
+ 8001234  8001234        e     2         build/RTOS/FreeRTOS/tasks.o:(.text.vTaskMissedYield)
+ 8001234  8001234        0     1                 $t.31
+ 8001235  8001235        e     1                 vTaskMissedYield
+ 8001242  8001242       24     2         build/RTOS/FreeRTOS/tasks.o:(.text.xTaskGetSchedulerState)
+ 8001242  8001242        0     1                 $t.33
+ 8001243  8001243       24     1                 xTaskGetSchedulerState
+ 8001266  8001266       b8     2         build/RTOS/FreeRTOS/tasks.o:(.text.xTaskPriorityDisinherit)
+ 8001266  8001266        0     1                 $t.35
+ 8001267  8001267       b8     1                 xTaskPriorityDisinherit
+ 800131e  800131e       68     2         build/RTOS/FreeRTOS/timers.o:(.text.xTimerCreateTimerTask)
+ 800131e  800131e        0     1                 $t.0
+ 800131f  800131f       68     1                 xTimerCreateTimerTask
+ 8001386  8001386       84     2         build/RTOS/FreeRTOS/timers.o:(.text.prvCheckForValidListAndQueue)
+ 8001386  8001386        0     1                 $t.1
+ 8001387  8001387       84     1                 prvCheckForValidListAndQueue
+ 800140c  800140c      17e     4         build/RTOS/FreeRTOS/timers.o:(.text.prvTimerTask)
+ 800140c  800140c        0     1                 $t.2
+ 800140d  800140d      17e     1                 prvTimerTask
+ 800158a  800158a       66     2         build/RTOS/FreeRTOS/timers.o:(.text.xTimerGenericCommand)
+ 800158a  800158a        0     1                 $t.4
+ 800158b  800158b       66     1                 xTimerGenericCommand
+ 80015f0  80015f0       ba     4         build/RTOS/FreeRTOS/timers.o:(.text.prvSampleTimeNow)
+ 80015f0  80015f0        0     1                 $t.12
+ 80015f1  80015f1       ba     1                 prvSampleTimeNow
+ 80016aa  80016aa       42     2         build/RTOS/FreeRTOS/timers.o:(.text.prvInsertTimerInActiveList)
+ 80016aa  80016aa        0     1                 $t.13
+ 80016ab  80016ab       42     1                 prvInsertTimerInActiveList
+ 80016ec  80016ec       20     2         build/RTOS/FreeRTOS/portable/GCC/ARM_CM3/port.o:(.text.pxPortInitialiseStack)
+ 80016ec  80016ec        0     1                 $t.0
+ 80016ed  80016ed       20     1                 pxPortInitialiseStack
+ 800170c  800170c       36     4         build/RTOS/FreeRTOS/portable/GCC/ARM_CM3/port.o:(.text.prvTaskExitError)
+ 800170c  800170c        0     1                 $t.1
+ 800170d  800170d       36     1                 prvTaskExitError
+ 8001750  8001750       24    16         build/RTOS/FreeRTOS/portable/GCC/ARM_CM3/port.o:(.text.vPortSVCHandler)
+ 8001750  8001750        0     1                 $t.2
+ 8001751  8001751       24     1                 vPortSVCHandler
+ 8001770  8001770        0     1                 $d.3
+ 8001770  8001770        0     1                 pxCurrentTCBConst2
+ 8001774  8001774       b8     4         build/RTOS/FreeRTOS/portable/GCC/ARM_CM3/port.o:(.text.xPortStartScheduler)
+ 8001774  8001774        0     1                 $t.4
+ 8001775  8001775       b8     1                 xPortStartScheduler
+ 800182c  800182c       34     2         build/RTOS/FreeRTOS/portable/GCC/ARM_CM3/port.o:(.text.vPortSetupTimerInterrupt)
+ 800182c  800182c        0     1                 $t.5
+ 800182d  800182d       34     1                 vPortSetupTimerInterrupt
+ 8001860  8001860       20     4         build/RTOS/FreeRTOS/portable/GCC/ARM_CM3/port.o:(.text.prvPortStartFirstTask)
+ 8001860  8001860        0     1                 $t.6
+ 8001861  8001861       1a     1                 prvPortStartFirstTask
+ 800187c  800187c        0     1                 $d.14
+ 8001880  8001880       36     2         build/RTOS/FreeRTOS/portable/GCC/ARM_CM3/port.o:(.text.vPortEnterCritical)
+ 8001880  8001880        0     1                 $t.8
+ 8001881  8001881       36     1                 vPortEnterCritical
+ 80018b6  80018b6       26     2         build/RTOS/FreeRTOS/portable/GCC/ARM_CM3/port.o:(.text.vPortExitCritical)
+ 80018b6  80018b6        0     1                 $t.9
+ 80018b7  80018b7       26     1                 vPortExitCritical
+ 80018e0  80018e0       44    16         build/RTOS/FreeRTOS/portable/GCC/ARM_CM3/port.o:(.text.xPortPendSVHandler)
+ 80018e0  80018e0        0     1                 $t.10
+ 80018e1  80018e1       44     1                 xPortPendSVHandler
+ 8001920  8001920        0     1                 $d.11
+ 8001920  8001920        0     1                 pxCurrentTCBConst
+ 8001924  8001924       30     2         build/RTOS/FreeRTOS/portable/GCC/ARM_CM3/port.o:(.text.xPortSysTickHandler)
+ 8001924  8001924        0     1                 $t.12
+ 8001925  8001925       30     1                 xPortSysTickHandler
+ 8001954  8001954       4e     2         build/RTOS/FreeRTOS/portable/GCC/ARM_CM3/port.o:(.text.vPortValidateInterruptPriority)
+ 8001954  8001954        0     1                 $t.13
+ 8001955  8001955       4e     1                 vPortValidateInterruptPriority
+ 80019a2  80019a2       30     2         build/RTOS/systemView/Config/SEGGER_SYSVIEW_Config_FreeRTOS.o:(.text.SEGGER_SYSVIEW_Conf)
+ 80019a2  80019a2        0     1                 $t.0
+ 80019a3  80019a3       30     1                 SEGGER_SYSVIEW_Conf
+ 80019d2  80019d2       20     2         build/RTOS/systemView/Config/SEGGER_SYSVIEW_Config_FreeRTOS.o:(.text._cbSendSystemDesc)
+ 80019d2  80019d2        0     1                 $t.1
+ 80019d3  80019d3       20     1                 _cbSendSystemDesc
+ 80019f2  80019f2       90     2         build/RTOS/systemView/OS/SEGGER_SYSVIEW_FreeRTOS.o:(.text.SYSVIEW_AddTask)
+ 80019f2  80019f2        0     1                 $t.0
+ 80019f3  80019f3       90     1                 SYSVIEW_AddTask
+ 8001a82  8001a82       12     2         build/RTOS/systemView/OS/SEGGER_SYSVIEW_FreeRTOS.o:(.text._cbGetTime)
+ 8001a82  8001a82        0     1                 $t.4
+ 8001a83  8001a83       12     1                 _cbGetTime
+ 8001a94  8001a94       64     4         build/RTOS/systemView/OS/SEGGER_SYSVIEW_FreeRTOS.o:(.text._cbSendTaskList)
+ 8001a94  8001a94        0     1                 $t.5
+ 8001a95  8001a95       64     1                 _cbSendTaskList
+ 8001af8  8001af8       1c     2         /home/will/gcc-arm-none-eabi-9-2019-q4-major/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memcmp.o):(.text.memcmp)
+ 8001af8  8001af8        0     1                 $t
+ 8001af9  8001af9       1c     1                 memcmp
+ 8001b14  8001b14       8e     2         build/RTOS/systemView/SEGGER/SEGGER_RTT.o:(.text.SEGGER_RTT_ReadNoLock)
+ 8001b14  8001b14        0     1                 $t.0
+ 8001b15  8001b15       8e     1                 SEGGER_RTT_ReadNoLock
+ 8001ba2  8001ba2       6c     2         build/RTOS/systemView/SEGGER/SEGGER_RTT.o:(.text._DoInit)
+ 8001ba2  8001ba2        0     1                 $t.1
+ 8001ba3  8001ba3       6c     1                 _DoInit
+ 8001c0e  8001c0e       66     2         build/RTOS/systemView/SEGGER/SEGGER_RTT.o:(.text.SEGGER_RTT_ConfigUpBuffer)
+ 8001c0e  8001c0e        0     1                 $t.19
+ 8001c0f  8001c0f       66     1                 SEGGER_RTT_ConfigUpBuffer
+ 8001c74  8001c74       68     2         build/RTOS/systemView/SEGGER/SEGGER_RTT.o:(.text.SEGGER_RTT_ConfigDownBuffer)
+ 8001c74  8001c74        0     1                 $t.20
+ 8001c75  8001c75       68     1                 SEGGER_RTT_ConfigDownBuffer
+ 8001cdc  8001cdc       10     2         /home/will/gcc-arm-none-eabi-9-2019-q4-major/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-strcpy.o):(.text.strcpy)
+ 8001cdc  8001cdc        0     1                 $t
+ 8001cdd  8001cdd       10     1                 strcpy
+ 8001cec  8001cec       ae     2         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.text.SEGGER_SYSVIEW_Init)
+ 8001cec  8001cec        0     1                 $t.0
+ 8001ced  8001ced       ae     1                 SEGGER_SYSVIEW_Init
+ 8001d9a  8001d9a        c     2         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.text.SEGGER_SYSVIEW_SetRAMBase)
+ 8001d9a  8001d9a        0     1                 $t.1
+ 8001d9b  8001d9b        c     1                 SEGGER_SYSVIEW_SetRAMBase
+ 8001da6  8001da6       28     2         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.text.SEGGER_SYSVIEW_RecordVoid)
+ 8001da6  8001da6        0     1                 $t.2
+ 8001da7  8001da7       28     1                 SEGGER_SYSVIEW_RecordVoid
+ 8001dd0  8001dd0      1a2     4         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.text._SendPacket)
+ 8001dd0  8001dd0        0     1                 $t.3
+ 8001dd1  8001dd1      1a2     1                 _SendPacket
+ 8001f74  8001f74       5a     4         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.text.SEGGER_SYSVIEW_RecordU32)
+ 8001f74  8001f74        0     1                 $t.4
+ 8001f75  8001f75       5a     1                 SEGGER_SYSVIEW_RecordU32
+ 8001fd0  8001fd0       7c     4         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.text.SEGGER_SYSVIEW_RecordU32x2)
+ 8001fd0  8001fd0        0     1                 $t.5
+ 8001fd1  8001fd1       7c     1                 SEGGER_SYSVIEW_RecordU32x2
+ 800204c  800204c       a2     4         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.text.SEGGER_SYSVIEW_RecordU32x3)
+ 800204c  800204c        0     1                 $t.6
+ 800204d  800204d       a2     1                 SEGGER_SYSVIEW_RecordU32x3
+ 80020f0  80020f0       c8     4         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.text.SEGGER_SYSVIEW_RecordU32x4)
+ 80020f0  80020f0        0     1                 $t.7
+ 80020f1  80020f1       c8     1                 SEGGER_SYSVIEW_RecordU32x4
+ 80021b8  80021b8       4e     4         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.text._EncodeStr)
+ 80021b8  80021b8        0     1                 $t.15
+ 80021b9  80021b9       4e     1                 _EncodeStr
+ 8002208  8002208      12a     4         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.text.SEGGER_SYSVIEW_Start)
+ 8002208  8002208        0     1                 $t.16
+ 8002209  8002209      12a     1                 SEGGER_SYSVIEW_Start
+ 8002332  8002332       3c     2         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.text.SEGGER_SYSVIEW_RecordSystime)
+ 8002332  8002332        0     1                 $t.17
+ 8002333  8002333       3c     1                 SEGGER_SYSVIEW_RecordSystime
+ 8002370  8002370       5a     4         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.text.SEGGER_SYSVIEW_SendNumModules)
+ 8002370  8002370        0     1                 $t.19
+ 8002371  8002371       5a     1                 SEGGER_SYSVIEW_SendNumModules
+ 80023ca  80023ca       38     2         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.text.SEGGER_SYSVIEW_Stop)
+ 80023ca  80023ca        0     1                 $t.20
+ 80023cb  80023cb       38     1                 SEGGER_SYSVIEW_Stop
+ 8002404  8002404       d0     4         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.text.SEGGER_SYSVIEW_GetSysDesc)
+ 8002404  8002404        0     1                 $t.21
+ 8002405  8002405       d0     1                 SEGGER_SYSVIEW_GetSysDesc
+ 80024d4  80024d4      118     4         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.text.SEGGER_SYSVIEW_SendTaskInfo)
+ 80024d4  80024d4        0     1                 $t.22
+ 80024d5  80024d5      118     1                 SEGGER_SYSVIEW_SendTaskInfo
+ 80025ec  80025ec       34     2         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.text.SEGGER_SYSVIEW_SendSysDesc)
+ 80025ec  80025ec        0     1                 $t.23
+ 80025ed  80025ed       34     1                 SEGGER_SYSVIEW_SendSysDesc
+ 8002620  8002620       28     2         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.text.SEGGER_SYSVIEW_OnIdle)
+ 8002620  8002620        0     1                 $t.31
+ 8002621  8002621       28     1                 SEGGER_SYSVIEW_OnIdle
+ 8002648  8002648       5e     4         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.text.SEGGER_SYSVIEW_OnTaskCreate)
+ 8002648  8002648        0     1                 $t.32
+ 8002649  8002649       5e     1                 SEGGER_SYSVIEW_OnTaskCreate
+ 80026a8  80026a8       5e     4         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.text.SEGGER_SYSVIEW_OnTaskStartExec)
+ 80026a8  80026a8        0     1                 $t.34
+ 80026a9  80026a9       5e     1                 SEGGER_SYSVIEW_OnTaskStartExec
+ 8002708  8002708       5e     4         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.text.SEGGER_SYSVIEW_OnTaskStartReady)
+ 8002708  8002708        0     1                 $t.36
+ 8002709  8002709       5e     1                 SEGGER_SYSVIEW_OnTaskStartReady
+ 8002766  8002766       10     2         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.text.SEGGER_SYSVIEW_ShrinkId)
+ 8002766  8002766        0     1                 $t.46
+ 8002767  8002767       10     1                 SEGGER_SYSVIEW_ShrinkId
+ 8002778  8002778       b8     4         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.text.SEGGER_SYSVIEW_SendModule)
+ 8002778  8002778        0     1                 $t.48
+ 8002779  8002779       b8     1                 SEGGER_SYSVIEW_SendModule
+ 8002830  8002830       3c     2         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.text.SEGGER_SYSVIEW_Warn)
+ 8002830  8002830        0     1                 $t.64
+ 8002831  8002831       3c     1                 SEGGER_SYSVIEW_Warn
+ 800286c  800286c       ac     4         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.text._HandleIncomingPacket)
+ 800286c  800286c        0     1                 $t.69
+ 800286d  800286d       ac     1                 _HandleIncomingPacket
+ 8002890  8002890        0     1                 $d.70
+ 8002898  8002898        0     1                 $t.71
+ 8002918  8002918       1a     4         build/Core/Src/main.o:(.text.main)
+ 8002918  8002918        0     1                 $t.0
+ 8002919  8002919       1a     1                 main
+ 8002932  8002932       4c     2         build/Core/Src/main.o:(.text.SystemClock_Config)
+ 8002932  8002932        0     1                 $t.1
+ 8002933  8002933       4c     1                 SystemClock_Config
+ 800297e  800297e        e     2         build/Core/Src/main.o:(.text.HAL_TIM_PeriodElapsedCallback)
+ 800297e  800297e        0     1                 $t.3
+ 800297f  800297f        e     1                 HAL_TIM_PeriodElapsedCallback
+ 800298c  800298c        2     2         build/Core/Src/stm32f1xx_it.o:(.text.NMI_Handler)
+ 800298c  800298c        0     1                 $t.0
+ 800298d  800298d        2     1                 NMI_Handler
+ 8002990  8002990        2     4         build/Core/Src/stm32f1xx_it.o:(.text.HardFault_Handler)
+ 8002990  8002990        0     1                 $t.1
+ 8002991  8002991        2     1                 HardFault_Handler
+ 8002994  8002994        2     4         build/Core/Src/stm32f1xx_it.o:(.text.MemManage_Handler)
+ 8002994  8002994        0     1                 $t.2
+ 8002995  8002995        2     1                 MemManage_Handler
+ 8002998  8002998        2     4         build/Core/Src/stm32f1xx_it.o:(.text.BusFault_Handler)
+ 8002998  8002998        0     1                 $t.3
+ 8002999  8002999        2     1                 BusFault_Handler
+ 800299c  800299c        2     4         build/Core/Src/stm32f1xx_it.o:(.text.UsageFault_Handler)
+ 800299c  800299c        0     1                 $t.4
+ 800299d  800299d        2     1                 UsageFault_Handler
+ 800299e  800299e        4     2         build/Core/Src/stm32f1xx_it.o:(.text.SVC_Handler)
+ 800299e  800299e        0     1                 $t.5
+ 800299f  800299f        4     1                 SVC_Handler
+ 80029a2  80029a2        2     2         build/Core/Src/stm32f1xx_it.o:(.text.DebugMon_Handler)
+ 80029a2  80029a2        0     1                 $t.6
+ 80029a3  80029a3        2     1                 DebugMon_Handler
+ 80029a4  80029a4        4     2         build/Core/Src/stm32f1xx_it.o:(.text.PendSV_Handler)
+ 80029a4  80029a4        0     1                 $t.7
+ 80029a5  80029a5        4     1                 PendSV_Handler
+ 80029a8  80029a8        4     2         build/Core/Src/stm32f1xx_it.o:(.text.SysTick_Handler)
+ 80029a8  80029a8        0     1                 $t.8
+ 80029a9  80029a9        4     1                 SysTick_Handler
+ 80029ac  80029ac        c     2         build/Core/Src/stm32f1xx_it.o:(.text.TIM2_IRQHandler)
+ 80029ac  80029ac        0     1                 $t.9
+ 80029ad  80029ad        c     1                 TIM2_IRQHandler
+ 80029b8  80029b8       42     2         build/Core/Src/stm32f1xx_hal_msp.o:(.text.HAL_MspInit)
+ 80029b8  80029b8        0     1                 $t.0
+ 80029b9  80029b9       42     1                 HAL_MspInit
+ 80029fa  80029fa       40     2         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o:(.text.HAL_TIM_Base_Init)
+ 80029fa  80029fa        0     1                 $t.0
+ 80029fb  80029fb       40     1                 HAL_TIM_Base_Init
+ 8002a3a  8002a3a        2     2         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o:(.text.HAL_TIM_Base_MspInit)
+ 8002a3a  8002a3a        0     1                 $t.1
+ 8002a3b  8002a3b        2     1                 HAL_TIM_Base_MspInit
+ 8002a3c  8002a3c       8c     2         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o:(.text.TIM_Base_SetConfig)
+ 8002a3c  8002a3c        0     1                 $t.2
+ 8002a3d  8002a3d       8c     1                 TIM_Base_SetConfig
+ 8002ac8  8002ac8       5e     2         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o:(.text.HAL_TIM_Base_Start_IT)
+ 8002ac8  8002ac8        0     1                 $t.7
+ 8002ac9  8002ac9       5e     1                 HAL_TIM_Base_Start_IT
+ 8002b26  8002b26      16c     2         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o:(.text.HAL_TIM_IRQHandler)
+ 8002b26  8002b26        0     1                 $t.91
+ 8002b27  8002b27      16c     1                 HAL_TIM_IRQHandler
+ 8002c92  8002c92        2     2         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o:(.text.HAL_TIM_IC_CaptureCallback)
+ 8002c92  8002c92        0     1                 $t.92
+ 8002c93  8002c93        2     1                 HAL_TIM_IC_CaptureCallback
+ 8002c94  8002c94        2     2         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o:(.text.HAL_TIM_OC_DelayElapsedCallback)
+ 8002c94  8002c94        0     1                 $t.93
+ 8002c95  8002c95        2     1                 HAL_TIM_OC_DelayElapsedCallback
+ 8002c96  8002c96        2     2         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o:(.text.HAL_TIM_PWM_PulseFinishedCallback)
+ 8002c96  8002c96        0     1                 $t.94
+ 8002c97  8002c97        2     1                 HAL_TIM_PWM_PulseFinishedCallback
+ 8002c98  8002c98        2     2         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o:(.text.HAL_TIM_TriggerCallback)
+ 8002c98  8002c98        0     1                 $t.96
+ 8002c99  8002c99        2     1                 HAL_TIM_TriggerCallback
+ 8002c9a  8002c9a        2     2         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o:(.text.HAL_TIMEx_CommutCallback)
+ 8002c9a  8002c9a        0     1                 $t.36
+ 8002c9b  8002c9b        2     1                 HAL_TIMEx_CommutCallback
+ 8002c9c  8002c9c        2     2         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o:(.text.HAL_TIMEx_BreakCallback)
+ 8002c9c  8002c9c        0     1                 $t.38
+ 8002c9d  8002c9d        2     1                 HAL_TIMEx_BreakCallback
+ 8002c9e  8002c9e       28     2         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o:(.text.HAL_Init)
+ 8002c9e  8002c9e        0     1                 $t.0
+ 8002c9f  8002c9f       28     1                 HAL_Init
+ 8002cc6  8002cc6       1a     2         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o:(.text.HAL_IncTick)
+ 8002cc6  8002cc6        0     1                 $t.5
+ 8002cc7  8002cc7       1a     1                 HAL_IncTick
+ 8002ce0  8002ce0        c     2         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o:(.text.HAL_GetTick)
+ 8002ce0  8002ce0        0     1                 $t.6
+ 8002ce1  8002ce1        c     1                 HAL_GetTick
+ 8002cec  8002cec      390     4         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o:(.text.HAL_RCC_OscConfig)
+ 8002cec  8002cec        0     1                 $t.1
+ 8002ced  8002ced      390     1                 HAL_RCC_OscConfig
+ 800307c  800307c      16e     4         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o:(.text.HAL_RCC_ClockConfig)
+ 800307c  800307c        0     1                 $t.2
+ 800307d  800307d      16e     1                 HAL_RCC_ClockConfig
+ 80031ea  80031ea       56     2         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o:(.text.HAL_RCC_GetSysClockFreq)
+ 80031ea  80031ea        0     1                 $t.3
+ 80031eb  80031eb       56     1                 HAL_RCC_GetSysClockFreq
+ 8003240  8003240       26     2         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o:(.text.HAL_RCC_GetPCLK1Freq)
+ 8003240  8003240        0     1                 $t.8
+ 8003241  8003241       26     1                 HAL_RCC_GetPCLK1Freq
+ 8003266  8003266       42     2         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o:(.text.HAL_RCC_GetClockConfig)
+ 8003266  8003266        0     1                 $t.11
+ 8003267  8003267       42     1                 HAL_RCC_GetClockConfig
+ 80032a8  80032a8      224     4         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o:(.text.HAL_GPIO_Init)
+ 80032a8  80032a8        0     1                 $t.0
+ 80032a9  80032a9      224     1                 HAL_GPIO_Init
+ 8003308  8003308        0     1                 $d.1
+ 800330c  800330c        0     1                 $t.2
+ 80034cc  80034cc        a     2         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o:(.text.HAL_GPIO_WritePin)
+ 80034cc  80034cc        0     1                 $t.5
+ 80034cd  80034cd        a     1                 HAL_GPIO_WritePin
+ 80034d6  80034d6       10     2         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o:(.text.HAL_GPIO_TogglePin)
+ 80034d6  80034d6        0     1                 $t.6
+ 80034d7  80034d7       10     1                 HAL_GPIO_TogglePin
+ 80034e6  80034e6       20     2         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o:(.text.HAL_NVIC_SetPriorityGrouping)
+ 80034e6  80034e6        0     1                 $t.0
+ 80034e7  80034e7       20     1                 HAL_NVIC_SetPriorityGrouping
+ 8003506  8003506       58     2         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o:(.text.HAL_NVIC_SetPriority)
+ 8003506  8003506        0     1                 $t.1
+ 8003507  8003507       58     1                 HAL_NVIC_SetPriority
+ 800355e  800355e       1e     2         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o:(.text.HAL_NVIC_EnableIRQ)
+ 800355e  800355e        0     1                 $t.2
+ 800355f  800355f       1e     1                 HAL_NVIC_EnableIRQ
+ 800357c  800357c       50     2         build/Core/Src/system_stm32f1xx.o:(.text.SystemInit)
+ 800357c  800357c        0     1                 $t.0
+ 800357d  800357d       50     1                 SystemInit
+ 80035cc  80035cc       1a     2         build/Core/Src/os.o:(.text.vApplicationGetIdleTaskMemory)
+ 80035cc  80035cc        0     1                 $t.0
+ 80035cd  80035cd       1a     1                 vApplicationGetIdleTaskMemory
+ 80035e6  80035e6       1c     2         build/Core/Src/os.o:(.text.vApplicationGetTimerTaskMemory)
+ 80035e6  80035e6        0     1                 $t.1
+ 80035e7  80035e7       1c     1                 vApplicationGetTimerTaskMemory
+ 8003602  8003602       10     2         build/Core/Src/os.o:(.text.startRTOS)
+ 8003602  8003602        0     1                 $t.2
+ 8003603  8003603       10     1                 startRTOS
+ 8003612  8003612       90     2         build/Core/Src/gpio.o:(.text.MX_GPIO_Init)
+ 8003612  8003612        0     1                 $t.0
+ 8003613  8003613       90     1                 MX_GPIO_Init
+ 80036a2  80036a2        4     2         build/Hook.o:(.text.assertFailed)
+ 80036a2  80036a2        0     1                 $t.2
+ 80036a3  80036a3        4     1                 assertFailed
+ 80036a6  80036a6       88     2         build/Core/Src/stm32f1xx_hal_timebase_tim.o:(.text.HAL_InitTick)
+ 80036a6  80036a6        0     1                 $t.0
+ 80036a7  80036a7       88     1                 HAL_InitTick
+ 8003730  8003730       48     4         build/startup_stm32f103xb.o:(.text.Reset_Handler)
+ 8003730  8003730        0     1                 $t.0
+ 8003731  8003731       34     1                 Reset_Handler
+ 8003734  8003734        0     1                 CopyDataInit
+ 800373c  800373c        0     1                 LoopCopyDataInit
+ 800374a  800374a        0     1                 FillZerobss
+ 8003750  8003750        0     1                 LoopFillZerobss
+ 8003764  8003764        0     1                 $d.2
+ 8003778  8003778        2     1         build/startup_stm32f103xb.o:(.text.Default_Handler)
+ 8003778  8003778        0     1                 $t.1
+ 8003778  8003778        0     1                 Infinite_Loop
+ 8003778  8003778        2     1                 Default_Handler
+ 8003779  8003779        2     1                 ADC1_2_IRQHandler
+ 8003779  8003779        2     1                 CAN1_RX1_IRQHandler
+ 8003779  8003779        2     1                 CAN1_SCE_IRQHandler
+ 8003779  8003779        2     1                 DMA1_Channel1_IRQHandler
+ 8003779  8003779        2     1                 DMA1_Channel2_IRQHandler
+ 8003779  8003779        2     1                 DMA1_Channel3_IRQHandler
+ 8003779  8003779        2     1                 DMA1_Channel4_IRQHandler
+ 8003779  8003779        2     1                 DMA1_Channel5_IRQHandler
+ 8003779  8003779        2     1                 DMA1_Channel6_IRQHandler
+ 8003779  8003779        2     1                 DMA1_Channel7_IRQHandler
+ 8003779  8003779        2     1                 EXTI0_IRQHandler
+ 8003779  8003779        2     1                 EXTI15_10_IRQHandler
+ 8003779  8003779        2     1                 EXTI1_IRQHandler
+ 8003779  8003779        2     1                 EXTI2_IRQHandler
+ 8003779  8003779        2     1                 EXTI3_IRQHandler
+ 8003779  8003779        2     1                 EXTI4_IRQHandler
+ 8003779  8003779        2     1                 EXTI9_5_IRQHandler
+ 8003779  8003779        2     1                 FLASH_IRQHandler
+ 8003779  8003779        2     1                 I2C1_ER_IRQHandler
+ 8003779  8003779        2     1                 I2C1_EV_IRQHandler
+ 8003779  8003779        2     1                 I2C2_ER_IRQHandler
+ 8003779  8003779        2     1                 I2C2_EV_IRQHandler
+ 8003779  8003779        2     1                 PVD_IRQHandler
+ 8003779  8003779        2     1                 RCC_IRQHandler
+ 8003779  8003779        2     1                 RTC_Alarm_IRQHandler
+ 8003779  8003779        2     1                 RTC_IRQHandler
+ 8003779  8003779        2     1                 SPI1_IRQHandler
+ 8003779  8003779        2     1                 SPI2_IRQHandler
+ 8003779  8003779        2     1                 TAMPER_IRQHandler
+ 8003779  8003779        2     1                 TIM1_BRK_IRQHandler
+ 8003779  8003779        2     1                 TIM1_CC_IRQHandler
+ 8003779  8003779        2     1                 TIM1_TRG_COM_IRQHandler
+ 8003779  8003779        2     1                 TIM1_UP_IRQHandler
+ 8003779  8003779        2     1                 TIM3_IRQHandler
+ 8003779  8003779        2     1                 TIM4_IRQHandler
+ 8003779  8003779        2     1                 USART1_IRQHandler
+ 8003779  8003779        2     1                 USART2_IRQHandler
+ 8003779  8003779        2     1                 USART3_IRQHandler
+ 8003779  8003779        2     1                 USBWakeUp_IRQHandler
+ 8003779  8003779        2     1                 USB_HP_CAN1_TX_IRQHandler
+ 8003779  8003779        2     1                 USB_LP_CAN1_RX0_IRQHandler
+ 8003779  8003779        2     1                 WWDG_IRQHandler
+ 800377c  800377c       48     4         /home/will/gcc-arm-none-eabi-9-2019-q4-major/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-init.o):(.text.__libc_init_array)
+ 800377c  800377c        0     1                 $t
+ 800377d  800377d       48     1                 __libc_init_array
+ 80037b4  80037b4        0     1                 $d
+ 80037c4  80037c4       1e     4         lto.tmp:(.text._Z6blinkyPv)
+ 80037c4  80037c4        0     1                 $t.0
+ 80037c5  80037c5       1e     1                 blinky(void*)
+ 80037e2  80037e2       3c     2         lto.tmp:(.text.startUserTasks)
+ 80037e2  80037e2        0     1                 $t.1
+ 80037e3  80037e3       3c     1                 startUserTasks
+ 8003824  8003824        4     4         /home/will/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m+fp/hard/crti.o:(.init)
+ 8003824  8003824        0     1                 $t
+ 8003825  8003825        0     1                 _init
+ 8003828  8003828        8     2         /home/will/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m+fp/hard/crtn.o:(.init)
+ 8003828  8003828        0     1                 $t
+ 8003830  8003830        4     4         /home/will/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m+fp/hard/crti.o:(.fini)
+ 8003830  8003830        0     1                 $t
+ 8003831  8003831        0     1                 _fini
+ 8003834  8003834        8     2         /home/will/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m+fp/hard/crtn.o:(.fini)
+ 8003834  8003834        0     1                 $t
+ 800383c  800383c        0     1         . = ALIGN ( 4 )
+ 800383c  800383c        0     1         _etext = .
+ 800383c  800383c      150     4 .rodata
+ 800383c  800383c        0     1         . = ALIGN ( 4 )
+ 800383c  800383c      114     1         <internal>:(.rodata)
+ 8003950  8003950        8     4         build/RTOS/systemView/OS/SEGGER_SYSVIEW_FreeRTOS.o:(.rodata.SYSVIEW_X_OS_TraceAPI)
+ 8003950  8003950        8     1                 SYSVIEW_X_OS_TraceAPI
+ 8003958  8003958        a     1         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.rodata._abSync)
+ 8003958  8003958        a     1                 _abSync
+ 8003962  8003962       10     1         <internal>:(.rodata)
+ 8003972  8003972        2     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o:(.rodata..L__const.HAL_RCC_GetSysClockFreq.aPredivFactorTable)
+ 8003972  8003972        2     1                 .L__const.HAL_RCC_GetSysClockFreq.aPredivFactorTable
+ 8003974  8003974       10     1         build/Core/Src/system_stm32f1xx.o:(.rodata.AHBPrescTable)
+ 8003974  8003974       10     1                 AHBPrescTable
+ 8003984  8003984        8     1         build/Core/Src/system_stm32f1xx.o:(.rodata.APBPrescTable)
+ 8003984  8003984        8     1                 APBPrescTable
+ 800398c  800398c        0     1         . = ALIGN ( 4 )
+ 800398c  800398c       10     4 .ARM
+ 800398c  800398c        0     1         __exidx_start = .
+ 800398c  800398c       10     4         <internal>:(.ARM.exidx)
+ 800399c  800399c        0     1         __exidx_end = .
+ 800399c  800399c        0     1 .preinit_array
+ 800399c  800399c        0     1         PROVIDE_HIDDEN ( __preinit_array_start = . )
+ 800399c  800399c        0     1         PROVIDE_HIDDEN ( __preinit_array_end = . )
+ 800399c  800399c        4     4 .init_array
+ 800399c  800399c        0     1         PROVIDE_HIDDEN ( __init_array_start = . )
+ 800399c  800399c        4     4         /home/will/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m+fp/hard/crtbegin.o:(.init_array)
+ 800399c  800399c        0     1                 $d
+ 800399c  800399c        0     1                 __frame_dummy_init_array_entry
+ 80039a0  80039a0        0     1         PROVIDE_HIDDEN ( __init_array_end = . )
+ 80039a0  80039a0        4     4 .fini_array
+ 80039a0  80039a0        4     4         /home/will/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m+fp/hard/crtbegin.o:(.fini_array)
+ 80039a0  80039a0        0     1                 $d
+ 80039a0  80039a0        0     1                 __do_global_dtors_aux_fini_array_entry
+ 80039a4  80039a4        0     1 _sidata = LOADADDR ( .data )
+20000000  80039a4       10     4 .data
+20000000  80039a4        0     1         . = ALIGN ( 4 )
+20000000  80039a4        0     1         _sdata = .
+20000000  80039a4        4     4         build/RTOS/FreeRTOS/portable/GCC/ARM_CM3/port.o:(.data.uxCriticalNesting)
+20000000  80039a4        4     1                 uxCriticalNesting
+20000004  80039a8        4     4         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o:(.data.uwTickPrio)
+20000004  80039a8        4     1                 uwTickPrio
+20000008  80039ac        4     4         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o:(.data.uwTickFreq)
+20000008  80039ac        4     1                 uwTickFreq
+2000000c  80039b0        4     4         build/Core/Src/system_stm32f1xx.o:(.data.SystemCoreClock)
+2000000c  80039b0        4     1                 SystemCoreClock
+20000010  80039b4        0     1         . = ALIGN ( 4 )
+20000010  80039b4        0     1         _edata = .
+20000010  80039b4        0     1 . = ALIGN ( 4 )
+20000010  80039b4     161c     4 .bss
+20000010  80039b4        0     1         _sbss = .
+20000010  80039b4        0     1         __bss_start__ = _sbss
+20000010  80039b4       1c     4         /home/will/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m+fp/hard/crtbegin.o:(.bss)
+20000010  80039b4        1     1                 completed.10274
+20000010  80039b4        0     1                 $d
+20000014  80039b8       18     1                 object.10279
+2000002c  80039d0        4     4         build/RTOS/FreeRTOS/tasks.o:(.bss.pxCurrentTCB)
+2000002c  80039d0        4     1                 pxCurrentTCB
+20000030  80039d4      140     4         build/RTOS/FreeRTOS/tasks.o:(.bss.pxReadyTasksLists)
+20000030  80039d4      140     1                 pxReadyTasksLists
+20000170  8003b14        4     4         build/RTOS/FreeRTOS/tasks.o:(.bss.uxTopReadyPriority)
+20000170  8003b14        4     1                 uxTopReadyPriority
+20000174  8003b18        4     4         build/RTOS/FreeRTOS/tasks.o:(.bss.uxTaskNumber)
+20000174  8003b18        4     1                 uxTaskNumber
+20000178  8003b1c       14     4         build/RTOS/FreeRTOS/tasks.o:(.bss.xTasksWaitingTermination)
+20000178  8003b1c       14     1                 xTasksWaitingTermination
+2000018c  8003b30        4     4         build/RTOS/FreeRTOS/tasks.o:(.bss.uxDeletedTasksWaitingCleanUp)
+2000018c  8003b30        4     1                 uxDeletedTasksWaitingCleanUp
+20000190  8003b34        4     4         build/RTOS/FreeRTOS/tasks.o:(.bss.uxCurrentNumberOfTasks)
+20000190  8003b34        4     1                 uxCurrentNumberOfTasks
+20000194  8003b38        4     4         build/RTOS/FreeRTOS/tasks.o:(.bss.xSchedulerRunning)
+20000194  8003b38        4     1                 xSchedulerRunning
+20000198  8003b3c        4     4         build/RTOS/FreeRTOS/tasks.o:(.bss.uxSchedulerSuspended)
+20000198  8003b3c        4     1                 uxSchedulerSuspended
+2000019c  8003b40        4     4         build/RTOS/FreeRTOS/tasks.o:(.bss.xTickCount)
+2000019c  8003b40        4     1                 xTickCount
+200001a0  8003b44       14     4         build/RTOS/FreeRTOS/tasks.o:(.bss.xSuspendedTaskList)
+200001a0  8003b44       14     1                 xSuspendedTaskList
+200001b4  8003b58       14     4         build/RTOS/FreeRTOS/tasks.o:(.bss.xPendingReadyList)
+200001b4  8003b58       14     1                 xPendingReadyList
+200001c8  8003b6c        4     4         build/RTOS/FreeRTOS/tasks.o:(.bss.xIdleTaskHandle)
+200001c8  8003b6c        4     1                 xIdleTaskHandle
+200001cc  8003b70        4     4         build/RTOS/FreeRTOS/tasks.o:(.bss.xNextTaskUnblockTime)
+200001cc  8003b70        4     1                 xNextTaskUnblockTime
+200001d0  8003b74        4     4         build/RTOS/FreeRTOS/tasks.o:(.bss.xYieldPending)
+200001d0  8003b74        4     1                 xYieldPending
+200001d4  8003b78        4     4         build/RTOS/FreeRTOS/tasks.o:(.bss.uxPendedTicks)
+200001d4  8003b78        4     1                 uxPendedTicks
+200001d8  8003b7c        4     4         build/RTOS/FreeRTOS/tasks.o:(.bss.pxDelayedTaskList)
+200001d8  8003b7c        4     1                 pxDelayedTaskList
+200001dc  8003b80        4     4         build/RTOS/FreeRTOS/tasks.o:(.bss.pxOverflowDelayedTaskList)
+200001dc  8003b80        4     1                 pxOverflowDelayedTaskList
+200001e0  8003b84        4     4         build/RTOS/FreeRTOS/tasks.o:(.bss.xNumOfOverflows)
+200001e0  8003b84        4     1                 xNumOfOverflows
+200001e4  8003b88       14     4         build/RTOS/FreeRTOS/tasks.o:(.bss.xDelayedTaskList1)
+200001e4  8003b88       14     1                 xDelayedTaskList1
+200001f8  8003b9c       14     4         build/RTOS/FreeRTOS/tasks.o:(.bss.xDelayedTaskList2)
+200001f8  8003b9c       14     1                 xDelayedTaskList2
+2000020c  8003bb0        4     4         build/RTOS/FreeRTOS/timers.o:(.bss.xTimerQueue)
+2000020c  8003bb0        4     1                 xTimerQueue
+20000210  8003bb4        4     4         build/RTOS/FreeRTOS/timers.o:(.bss.xTimerTaskHandle)
+20000210  8003bb4        4     1                 xTimerTaskHandle
+20000214  8003bb8        4     4         build/RTOS/FreeRTOS/timers.o:(.bss.pxCurrentTimerList)
+20000214  8003bb8        4     1                 pxCurrentTimerList
+20000218  8003bbc        4     4         build/RTOS/FreeRTOS/timers.o:(.bss.pxOverflowTimerList)
+20000218  8003bbc        4     1                 pxOverflowTimerList
+2000021c  8003bc0        4     4         build/RTOS/FreeRTOS/timers.o:(.bss.prvSampleTimeNow.xLastTime)
+2000021c  8003bc0        4     1                 prvSampleTimeNow.xLastTime
+20000220  8003bc4       14     4         build/RTOS/FreeRTOS/timers.o:(.bss.xActiveTimerList1)
+20000220  8003bc4       14     1                 xActiveTimerList1
+20000234  8003bd8       14     4         build/RTOS/FreeRTOS/timers.o:(.bss.xActiveTimerList2)
+20000234  8003bd8       14     1                 xActiveTimerList2
+20000248  8003bec       48     4         build/RTOS/FreeRTOS/timers.o:(.bss.prvCheckForValidListAndQueue.xStaticTimerQueue)
+20000248  8003bec       48     1                 prvCheckForValidListAndQueue.xStaticTimerQueue
+20000290  8003c34       78     1         build/RTOS/FreeRTOS/timers.o:(.bss.prvCheckForValidListAndQueue.ucStaticTimerQueueStorage)
+20000290  8003c34       78     1                 prvCheckForValidListAndQueue.ucStaticTimerQueueStorage
+20000308  8003cac        1     1         build/RTOS/FreeRTOS/portable/GCC/ARM_CM3/port.o:(.bss.ucMaxSysCallPriority)
+20000308  8003cac        1     1                 ucMaxSysCallPriority
+2000030c  8003cb0        4     4         build/RTOS/FreeRTOS/portable/GCC/ARM_CM3/port.o:(.bss.ulMaxPRIGROUPValue)
+2000030c  8003cb0        4     1                 ulMaxPRIGROUPValue
+20000310  8003cb4        4     4         build/RTOS/systemView/OS/SEGGER_SYSVIEW_FreeRTOS.o:(.bss._NumTasks)
+20000310  8003cb4        4     1                 _NumTasks
+20000314  8003cb8       a0     4         build/RTOS/systemView/OS/SEGGER_SYSVIEW_FreeRTOS.o:(.bss._aTasks)
+20000314  8003cb8       a0     1                 _aTasks
+200003b4  8003d58      400     1         build/RTOS/systemView/SEGGER/SEGGER_RTT.o:(.bss._acUpBuffer)
+200003b4  8003d58      400     1                 _acUpBuffer
+200007b4  8004158       10     1         build/RTOS/systemView/SEGGER/SEGGER_RTT.o:(.bss._acDownBuffer)
+200007b4  8004158       10     1                 _acDownBuffer
+200007c4  8004168      400     1         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.bss._UpBuffer)
+200007c4  8004168      400     1                 _UpBuffer
+20000bc4  8004568        8     1         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.bss._DownBuffer)
+20000bc4  8004568        8     1                 _DownBuffer
+20000bcc  8004570       e3     1         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.bss._aPacket)
+20000bcc  8004570       e3     1                 _aPacket
+20000cb0  8004654        4     4         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.bss._pFirstModule)
+20000cb0  8004654        4     1                 _pFirstModule
+20000cb4  8004658        1     1         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.bss._NumModules)
+20000cb4  8004658        1     1                 _NumModules
+20000cb8  800465c        1     4         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.bss._SYSVIEW_Globals.0)
+20000cb8  800465c        1     1                 _SYSVIEW_Globals.0
+20000cba  800465e        1     2         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.bss._SYSVIEW_Globals.2)
+20000cba  800465e        1     1                 _SYSVIEW_Globals.2
+20000cbc  8004660        4     4         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.bss._SYSVIEW_Globals.3)
+20000cbc  8004660        4     1                 _SYSVIEW_Globals.3
+20000cc0  8004664        4     4         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.bss._SYSVIEW_Globals.4)
+20000cc0  8004664        4     1                 _SYSVIEW_Globals.4
+20000cc4  8004668        4     4         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.bss._SYSVIEW_Globals.5)
+20000cc4  8004668        4     1                 _SYSVIEW_Globals.5
+20000cc8  800466c        4     4         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.bss._SYSVIEW_Globals.6)
+20000cc8  800466c        4     1                 _SYSVIEW_Globals.6
+20000ccc  8004670        4     4         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.bss._SYSVIEW_Globals.7)
+20000ccc  8004670        4     1                 _SYSVIEW_Globals.7
+20000cd0  8004674        4     4         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.bss._SYSVIEW_Globals.9)
+20000cd0  8004674        4     1                 _SYSVIEW_Globals.9
+20000cd4  8004678        4     4         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.bss._SYSVIEW_Globals.10)
+20000cd4  8004678        4     1                 _SYSVIEW_Globals.10
+20000cd8  800467c        4     4         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.bss._SYSVIEW_Globals.11)
+20000cd8  800467c        4     1                 _SYSVIEW_Globals.11
+20000cdc  8004680       54     4         build/Core/Src/os.o:(.bss.vApplicationGetIdleTaskMemory.xIdleTaskTCB)
+20000cdc  8004680       54     1                 vApplicationGetIdleTaskMemory.xIdleTaskTCB
+20000d30  80046d4      200     4         build/Core/Src/os.o:(.bss.vApplicationGetIdleTaskMemory.uxIdleTaskStack)
+20000d30  80046d4      200     1                 vApplicationGetIdleTaskMemory.uxIdleTaskStack
+20000f30  80048d4       54     4         build/Core/Src/os.o:(.bss.vApplicationGetTimerTaskMemory.xTimerTaskTCB)
+20000f30  80048d4       54     1                 vApplicationGetTimerTaskMemory.xTimerTaskTCB
+20000f84  8004928      400     4         build/Core/Src/os.o:(.bss.vApplicationGetTimerTaskMemory.uxTimerTaskStack)
+20000f84  8004928      400     1                 vApplicationGetTimerTaskMemory.uxTimerTaskStack
+20001384  8004d28      100     4         lto.tmp:(.bss.uxBlinkTaskStack)
+20001384  8004d28      100     1                 uxBlinkTaskStack
+20001484  8004e28       54     4         lto.tmp:(.bss.xBlinkTaskTCB)
+20001484  8004e28       54     1                 xBlinkTaskTCB
+200014d8  8004e7c       40     4         build/RTOS/FreeRTOS/queue.o:(COMMON)
+200014d8  8004e7c       40     1                 xQueueRegistry
+20001518  8004ebc       a8     4         build/RTOS/systemView/SEGGER/SEGGER_RTT.o:(COMMON)
+20001518  8004ebc       a8     1                 _SEGGER_RTT
+20001518  8004ebc       a8     1                 _SEGGER_RTT
+20001518  8004ebc       a8     1                 _SEGGER_RTT
+200015c0  8004f64       68     4         build/Core/Src/stm32f1xx_hal_timebase_tim.o:(COMMON)
+200015c0  8004f64       68     1                 htim2
+200015c0  8004f64       68     1                 htim2
+20001628  8004fcc        4     4         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o:(COMMON)
+20001628  8004fcc        4     1                 uwTick
+2000162c  8004fd0        0     1         . = ALIGN ( 4 )
+2000162c  8004fd0        0     1         _ebss = .
+2000162c  8004fd0        0     1         __bss_end__ = _ebss
+2000162c  8004fd0      604     1 ._user_heap_stack
+2000162c  8004fd0        4     1         . = ALIGN ( 8 )
+20001630  8004fd4      200     1         . = . + _Min_Heap_Size
+20001830  80051d4      400     1         . = . + _Min_Stack_Size
+20001c30  80055d4        0     1         . = ALIGN ( 8 )
+       0        0       1e     1 .ARM.attributes
+       0        0       1e     1         /home/will/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m+fp/hard/crti.o:(.ARM.attributes)
+       0        0       2a     1 .comment
+       0        0       2a     1         <internal>:(.comment)
+       0        0     747c     1 .debug_str
+       0        0     747c     1         <internal>:(.debug_str)
+       0        0    14cc5     1 .debug_loc
+       0        0      76f     1         build/RTOS/FreeRTOS/event_groups.o:(.debug_loc)
+     76f      76f       c8     1         build/RTOS/FreeRTOS/list.o:(.debug_loc)
+     837      837     1589     1         build/RTOS/FreeRTOS/queue.o:(.debug_loc)
+    1dc0     1dc0     12a0     1         build/RTOS/FreeRTOS/stream_buffer.o:(.debug_loc)
+    3060     3060     1631     1         build/RTOS/FreeRTOS/tasks.o:(.debug_loc)
+    4691     4691      8fd     1         build/RTOS/FreeRTOS/timers.o:(.debug_loc)
+    4f8e     4f8e       de     1         build/RTOS/FreeRTOS/portable/GCC/ARM_CM3/port.o:(.debug_loc)
+    506c     506c      44c     1         build/RTOS/systemView/OS/SEGGER_SYSVIEW_FreeRTOS.o:(.debug_loc)
+    54b8     54b8     146a     1         build/RTOS/systemView/SEGGER/SEGGER_RTT.o:(.debug_loc)
+    6922     6922     559b     1         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.debug_loc)
+    bebd     bebd       1b     1         build/Core/Src/main.o:(.debug_loc)
+    bed8     bed8       13     1         build/Core/Src/stm32f1xx_hal_msp.o:(.debug_loc)
+    beeb     beeb       1b     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o:(.debug_loc)
+    bf06     bf06     3f76     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o:(.debug_loc)
+    fe7c     fe7c     1414     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o:(.debug_loc)
+   11290    11290       ea     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o:(.debug_loc)
+   1137a    1137a      339     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o:(.debug_loc)
+   116b3    116b3      28f     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o:(.debug_loc)
+   11942    11942      2d6     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o:(.debug_loc)
+   11c18    11c18      61a     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o:(.debug_loc)
+   12232    12232      459     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o:(.debug_loc)
+   1268b    1268b      10e     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o:(.debug_loc)
+   12799    12799      2fe     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o:(.debug_loc)
+   12a97    12a97      77f     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o:(.debug_loc)
+   13216    13216      337     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o:(.debug_loc)
+   1354d    1354d       93     1         build/Core/Src/system_stm32f1xx.o:(.debug_loc)
+   135e0    135e0       36     1         build/Core/Src/os.o:(.debug_loc)
+   13616    13616      ba9     1         build/Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_fir_f32.o:(.debug_loc)
+   141bf    141bf       76     1         build/Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_fir_init_f32.o:(.debug_loc)
+   14235    14235      578     1         build/Drivers/CMSIS/DSP/Source/MatrixFunctions/arm_mat_inverse_f32.o:(.debug_loc)
+   147ad    147ad      1d0     1         build/Drivers/CMSIS/DSP/Source/MatrixFunctions/arm_mat_mult_f32.o:(.debug_loc)
+   1497d    1497d       bd     1         build/Drivers/CMSIS/DSP/Source/MatrixFunctions/arm_mat_trans_f32.o:(.debug_loc)
+   14a3a    14a3a       ac     1         build/Drivers/CMSIS/DSP/Source/MatrixFunctions/arm_mat_add_f32.o:(.debug_loc)
+   14ae6    14ae6      14f     1         build/Drivers/CMSIS/DSP/Source/StatisticsFunctions/arm_var_f32.o:(.debug_loc)
+   14c35    14c35       90     1         build/Core/Src/stm32f1xx_hal_timebase_tim.o:(.debug_loc)
+       0        0     3f53     1 .debug_abbrev
+       0        0      262     1         build/RTOS/FreeRTOS/event_groups.o:(.debug_abbrev)
+     262      262       c1     1         build/RTOS/FreeRTOS/list.o:(.debug_abbrev)
+     323      323      316     1         build/RTOS/FreeRTOS/queue.o:(.debug_abbrev)
+     639      639      287     1         build/RTOS/FreeRTOS/stream_buffer.o:(.debug_abbrev)
+     8c0      8c0      390     1         build/RTOS/FreeRTOS/tasks.o:(.debug_abbrev)
+     c50      c50      2b3     1         build/RTOS/FreeRTOS/timers.o:(.debug_abbrev)
+     f03      f03      220     1         build/RTOS/FreeRTOS/portable/GCC/ARM_CM3/port.o:(.debug_abbrev)
+    1123     1123       ab     1         build/RTOS/systemView/Config/SEGGER_SYSVIEW_Config_FreeRTOS.o:(.debug_abbrev)
+    11ce     11ce      1eb     1         build/RTOS/systemView/OS/SEGGER_SYSVIEW_FreeRTOS.o:(.debug_abbrev)
+    13b9     13b9      22a     1         build/RTOS/systemView/SEGGER/SEGGER_RTT.o:(.debug_abbrev)
+    15e3     15e3      2e5     1         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.debug_abbrev)
+    18c8     18c8      197     1         build/Core/Src/main.o:(.debug_abbrev)
+    1a5f     1a5f      128     1         build/Core/Src/stm32f1xx_it.o:(.debug_abbrev)
+    1b87     1b87       bb     1         build/Core/Src/stm32f1xx_hal_msp.o:(.debug_abbrev)
+    1c42     1c42       ca     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o:(.debug_abbrev)
+    1d0c     1d0c      256     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o:(.debug_abbrev)
+    1f62     1f62      22d     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o:(.debug_abbrev)
+    218f     218f      1b1     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o:(.debug_abbrev)
+    2340     2340      246     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o:(.debug_abbrev)
+    2586     2586      16f     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o:(.debug_abbrev)
+    26f5     26f5      197     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o:(.debug_abbrev)
+    288c     288c      1ad     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o:(.debug_abbrev)
+    2a39     2a39      2b3     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o:(.debug_abbrev)
+    2cec     2cec      18e     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o:(.debug_abbrev)
+    2e7a     2e7a      23b     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o:(.debug_abbrev)
+    30b5     30b5      240     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o:(.debug_abbrev)
+    32f5     32f5      17a     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o:(.debug_abbrev)
+    346f     346f       e9     1         build/Core/Src/system_stm32f1xx.o:(.debug_abbrev)
+    3558     3558       e9     1         build/Core/Src/os.o:(.debug_abbrev)
+    3641     3641       a4     1         build/Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_fir_f32.o:(.debug_abbrev)
+    36e5     36e5       a0     1         build/Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_fir_init_f32.o:(.debug_abbrev)
+    3785     3785       d8     1         build/Drivers/CMSIS/DSP/Source/MatrixFunctions/arm_mat_inverse_f32.o:(.debug_abbrev)
+    385d     385d       bc     1         build/Drivers/CMSIS/DSP/Source/MatrixFunctions/arm_mat_mult_f32.o:(.debug_abbrev)
+    3919     3919       bc     1         build/Drivers/CMSIS/DSP/Source/MatrixFunctions/arm_mat_trans_f32.o:(.debug_abbrev)
+    39d5     39d5       af     1         build/Drivers/CMSIS/DSP/Source/MatrixFunctions/arm_mat_add_f32.o:(.debug_abbrev)
+    3a84     3a84       83     1         build/Drivers/CMSIS/DSP/Source/StatisticsFunctions/arm_var_f32.o:(.debug_abbrev)
+    3b07     3b07       e0     1         build/Core/Src/gpio.o:(.debug_abbrev)
+    3be7     3be7       77     1         build/Hook.o:(.debug_abbrev)
+    3c5e     3c5e      192     1         build/Core/Src/stm32f1xx_hal_timebase_tim.o:(.debug_abbrev)
+    3df0     3df0       28     1         build/RTOS/systemView/SEGGER/SEGGER_RTT_ASM_ARMv7M.o:(.debug_abbrev)
+    3e18     3e18       26     1         build/startup_stm32f103xb.o:(.debug_abbrev)
+    3e3e     3e3e      115     1         lto.tmp:(.debug_abbrev)
+       0        0    15be7     1 .debug_info
+       0        0      820     1         build/RTOS/FreeRTOS/event_groups.o:(.debug_info)
+     820      820      240     1         build/RTOS/FreeRTOS/list.o:(.debug_info)
+     a60      a60     1445     1         build/RTOS/FreeRTOS/queue.o:(.debug_info)
+    1ea5     1ea5      e74     1         build/RTOS/FreeRTOS/stream_buffer.o:(.debug_info)
+    2d19     2d19     1969     1         build/RTOS/FreeRTOS/tasks.o:(.debug_info)
+    4682     4682      e7b     1         build/RTOS/FreeRTOS/timers.o:(.debug_info)
+    54fd     54fd      370     1         build/RTOS/FreeRTOS/portable/GCC/ARM_CM3/port.o:(.debug_info)
+    586d     586d       e9     1         build/RTOS/systemView/Config/SEGGER_SYSVIEW_Config_FreeRTOS.o:(.debug_info)
+    5956     5956      4bf     1         build/RTOS/systemView/OS/SEGGER_SYSVIEW_FreeRTOS.o:(.debug_info)
+    5e15     5e15      fed     1         build/RTOS/systemView/SEGGER/SEGGER_RTT.o:(.debug_info)
+    6e02     6e02     31a5     1         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.debug_info)
+    9fa7     9fa7      725     1         build/Core/Src/main.o:(.debug_info)
+    a6cc     a6cc      5d8     1         build/Core/Src/stm32f1xx_it.o:(.debug_info)
+    aca4     aca4      1a8     1         build/Core/Src/stm32f1xx_hal_msp.o:(.debug_info)
+    ae4c     ae4c      104     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o:(.debug_info)
+    af50     af50     33db     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o:(.debug_info)
+    e32b     e32b     15ad     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o:(.debug_info)
+    f8d8     f8d8      684     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o:(.debug_info)
+    ff5c     ff5c      786     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o:(.debug_info)
+   106e2    106e2      34d     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o:(.debug_info)
+   10a2f    10a2f      55b     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o:(.debug_info)
+   10f8a    10f8a      699     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o:(.debug_info)
+   11623    11623      af7     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o:(.debug_info)
+   1211a    1211a      58f     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o:(.debug_info)
+   126a9    126a9      52e     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o:(.debug_info)
+   12bd7    12bd7      796     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o:(.debug_info)
+   1336d    1336d      49a     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o:(.debug_info)
+   13807    13807      329     1         build/Core/Src/system_stm32f1xx.o:(.debug_info)
+   13b30    13b30      29b     1         build/Core/Src/os.o:(.debug_info)
+   13dcb    13dcb      303     1         build/Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_fir_f32.o:(.debug_info)
+   140ce    140ce      137     1         build/Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_fir_init_f32.o:(.debug_info)
+   14205    14205      27c     1         build/Drivers/CMSIS/DSP/Source/MatrixFunctions/arm_mat_inverse_f32.o:(.debug_info)
+   14481    14481      203     1         build/Drivers/CMSIS/DSP/Source/MatrixFunctions/arm_mat_mult_f32.o:(.debug_info)
+   14684    14684      19a     1         build/Drivers/CMSIS/DSP/Source/MatrixFunctions/arm_mat_trans_f32.o:(.debug_info)
+   1481e    1481e      1a5     1         build/Drivers/CMSIS/DSP/Source/MatrixFunctions/arm_mat_add_f32.o:(.debug_info)
+   149c3    149c3       ed     1         build/Drivers/CMSIS/DSP/Source/StatisticsFunctions/arm_var_f32.o:(.debug_info)
+   14ab0    14ab0      271     1         build/Core/Src/gpio.o:(.debug_info)
+   14d21    14d21       8d     1         build/Hook.o:(.debug_info)
+   14dae    14dae      899     1         build/Core/Src/stm32f1xx_hal_timebase_tim.o:(.debug_info)
+   15647    15647      1c1     1         build/RTOS/systemView/SEGGER/SEGGER_RTT_ASM_ARMv7M.o:(.debug_info)
+   15808    15808      15e     1         build/startup_stm32f103xb.o:(.debug_info)
+   15966    15966      281     1         lto.tmp:(.debug_info)
+       0        0     2250     1 .debug_ranges
+       0        0       68     1         build/RTOS/FreeRTOS/event_groups.o:(.debug_ranges)
+      68       68       30     1         build/RTOS/FreeRTOS/list.o:(.debug_ranges)
+      98       98      178     1         build/RTOS/FreeRTOS/queue.o:(.debug_ranges)
+     210      210       a0     1         build/RTOS/FreeRTOS/stream_buffer.o:(.debug_ranges)
+     2b0      2b0      270     1         build/RTOS/FreeRTOS/tasks.o:(.debug_ranges)
+     520      520       78     1         build/RTOS/FreeRTOS/timers.o:(.debug_ranges)
+     598      598       68     1         build/RTOS/FreeRTOS/portable/GCC/ARM_CM3/port.o:(.debug_ranges)
+     600      600       18     1         build/RTOS/systemView/Config/SEGGER_SYSVIEW_Config_FreeRTOS.o:(.debug_ranges)
+     618      618       50     1         build/RTOS/systemView/OS/SEGGER_SYSVIEW_FreeRTOS.o:(.debug_ranges)
+     668      668      148     1         build/RTOS/systemView/SEGGER/SEGGER_RTT.o:(.debug_ranges)
+     7b0      7b0      c48     1         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.debug_ranges)
+    13f8     13f8       28     1         build/Core/Src/main.o:(.debug_ranges)
+    1420     1420       58     1         build/Core/Src/stm32f1xx_it.o:(.debug_ranges)
+    1478     1478       20     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o:(.debug_ranges)
+    1498     1498      558     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o:(.debug_ranges)
+    19f0     19f0      1c8     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o:(.debug_ranges)
+    1bb8     1bb8       d0     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o:(.debug_ranges)
+    1c88     1c88       98     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o:(.debug_ranges)
+    1d20     1d20       38     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o:(.debug_ranges)
+    1d58     1d58       60     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o:(.debug_ranges)
+    1db8     1db8       a8     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o:(.debug_ranges)
+    1e60     1e60      110     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o:(.debug_ranges)
+    1f70     1f70       98     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o:(.debug_ranges)
+    2008     2008       98     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o:(.debug_ranges)
+    20a0     20a0       78     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o:(.debug_ranges)
+    2118     2118       50     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o:(.debug_ranges)
+    2168     2168       18     1         build/Core/Src/system_stm32f1xx.o:(.debug_ranges)
+    2180     2180       20     1         build/Core/Src/os.o:(.debug_ranges)
+    21a0     21a0       30     1         build/Core/Src/gpio.o:(.debug_ranges)
+    21d0     21d0       20     1         build/Hook.o:(.debug_ranges)
+    21f0     21f0       20     1         build/Core/Src/stm32f1xx_hal_timebase_tim.o:(.debug_ranges)
+    2210     2210       28     1         build/startup_stm32f103xb.o:(.debug_ranges)
+    2238     2238       18     1         lto.tmp:(.debug_ranges)
+       0        0     3ff4     4 .debug_frame
+       0        0      124     4         build/RTOS/FreeRTOS/event_groups.o:(.debug_frame)
+     124      124       70     4         build/RTOS/FreeRTOS/list.o:(.debug_frame)
+     194      194      3b8     4         build/RTOS/FreeRTOS/queue.o:(.debug_frame)
+     54c      54c       28     4         /home/will/gcc-arm-none-eabi-9-2019-q4-major/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memcpy-stub.o):(.debug_frame)
+     574      574      2cc     4         build/RTOS/FreeRTOS/stream_buffer.o:(.debug_frame)
+     840      840       20     4         /home/will/gcc-arm-none-eabi-9-2019-q4-major/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memset.o):(.debug_frame)
+     860      860      59c     4         build/RTOS/FreeRTOS/tasks.o:(.debug_frame)
+     dfc      dfc      1e8     4         build/RTOS/FreeRTOS/timers.o:(.debug_frame)
+     fe4      fe4      118     4         build/RTOS/FreeRTOS/portable/GCC/ARM_CM3/port.o:(.debug_frame)
+    10fc     10fc       4c     4         build/RTOS/systemView/Config/SEGGER_SYSVIEW_Config_FreeRTOS.o:(.debug_frame)
+    1148     1148       f8     4         build/RTOS/systemView/OS/SEGGER_SYSVIEW_FreeRTOS.o:(.debug_frame)
+    1240     1240       2c     4         /home/will/gcc-arm-none-eabi-9-2019-q4-major/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memcmp.o):(.debug_frame)
+    126c     126c      3d4     4         build/RTOS/systemView/SEGGER/SEGGER_RTT.o:(.debug_frame)
+    1640     1640       20     4         /home/will/gcc-arm-none-eabi-9-2019-q4-major/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-strcpy.o):(.debug_frame)
+    1660     1660      8a8     4         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.debug_frame)
+    1f08     1f08       70     4         build/Core/Src/main.o:(.debug_frame)
+    1f78     1f78       b4     4         build/Core/Src/stm32f1xx_it.o:(.debug_frame)
+    202c     202c       28     4         build/Core/Src/stm32f1xx_hal_msp.o:(.debug_frame)
+    2054     2054       44     4         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o:(.debug_frame)
+    2098     2098      ac8     4         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o:(.debug_frame)
+    2b60     2b60      45c     4         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o:(.debug_frame)
+    2fbc     2fbc      1ec     4         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o:(.debug_frame)
+    31a8     31a8      158     4         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o:(.debug_frame)
+    3300     3300       68     4         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o:(.debug_frame)
+    3368     3368       d0     4         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o:(.debug_frame)
+    3438     3438      154     4         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o:(.debug_frame)
+    358c     358c      140     4         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o:(.debug_frame)
+    36cc     36cc      154     4         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o:(.debug_frame)
+    3820     3820      138     4         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o:(.debug_frame)
+    3958     3958       ec     4         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o:(.debug_frame)
+    3a44     3a44       d4     4         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o:(.debug_frame)
+    3b18     3b18       34     4         build/Core/Src/system_stm32f1xx.o:(.debug_frame)
+    3b4c     3b4c       50     4         build/Core/Src/os.o:(.debug_frame)
+    3b9c     3b9c       40     4         build/Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_fir_f32.o:(.debug_frame)
+    3bdc     3bdc       4c     4         /home/will/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubsf3.o):(.debug_frame)
+    3c28     3c28       24     4         /home/will/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_mulsf3.o):(.debug_frame)
+    3c4c     3c4c       34     4         build/Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_fir_init_f32.o:(.debug_frame)
+    3c80     3c80       40     4         build/Drivers/CMSIS/DSP/Source/MatrixFunctions/arm_mat_inverse_f32.o:(.debug_frame)
+    3cc0     3cc0       c8     4         /home/will/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_cmpsf2.o):(.debug_frame)
+    3d88     3d88       38     4         /home/will/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldivsf3.o):(.debug_frame)
+    3dc0     3dc0       40     4         build/Drivers/CMSIS/DSP/Source/MatrixFunctions/arm_mat_mult_f32.o:(.debug_frame)
+    3e00     3e00       34     4         build/Drivers/CMSIS/DSP/Source/MatrixFunctions/arm_mat_trans_f32.o:(.debug_frame)
+    3e34     3e34       38     4         build/Drivers/CMSIS/DSP/Source/MatrixFunctions/arm_mat_add_f32.o:(.debug_frame)
+    3e6c     3e6c       40     4         build/Drivers/CMSIS/DSP/Source/StatisticsFunctions/arm_var_f32.o:(.debug_frame)
+    3eac     3eac       38     4         build/Core/Src/gpio.o:(.debug_frame)
+    3ee4     3ee4       44     4         build/Hook.o:(.debug_frame)
+    3f28     3f28       54     4         build/Core/Src/stm32f1xx_hal_timebase_tim.o:(.debug_frame)
+    3f7c     3f7c       2c     4         /home/will/gcc-arm-none-eabi-9-2019-q4-major/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-init.o):(.debug_frame)
+    3fa8     3fa8       4c     4         lto.tmp:(.debug_frame)
+       0        0     ff52     1 .debug_line
+       0        0      491     1         build/RTOS/FreeRTOS/event_groups.o:(.debug_line)
+     491      491      23d     1         build/RTOS/FreeRTOS/list.o:(.debug_line)
+     6ce      6ce      dde     1         build/RTOS/FreeRTOS/queue.o:(.debug_line)
+    14ac     14ac      896     1         build/RTOS/FreeRTOS/stream_buffer.o:(.debug_line)
+    1d42     1d42     138b     1         build/RTOS/FreeRTOS/tasks.o:(.debug_line)
+    30cd     30cd      603     1         build/RTOS/FreeRTOS/timers.o:(.debug_line)
+    36d0     36d0      3cd     1         build/RTOS/FreeRTOS/portable/GCC/ARM_CM3/port.o:(.debug_line)
+    3a9d     3a9d       b6     1         build/RTOS/systemView/Config/SEGGER_SYSVIEW_Config_FreeRTOS.o:(.debug_line)
+    3b53     3b53      3ce     1         build/RTOS/systemView/OS/SEGGER_SYSVIEW_FreeRTOS.o:(.debug_line)
+    3f21     3f21      986     1         build/RTOS/systemView/SEGGER/SEGGER_RTT.o:(.debug_line)
+    48a7     48a7     1879     1         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.debug_line)
+    6120     6120      2ac     1         build/Core/Src/main.o:(.debug_line)
+    63cc     63cc      26c     1         build/Core/Src/stm32f1xx_it.o:(.debug_line)
+    6638     6638      14c     1         build/Core/Src/stm32f1xx_hal_msp.o:(.debug_line)
+    6784     6784      196     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o:(.debug_line)
+    691a     691a     2fc0     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o:(.debug_line)
+    98da     98da     1181     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o:(.debug_line)
+    aa5b     aa5b      4a1     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o:(.debug_line)
+    aefc     aefc      8e8     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o:(.debug_line)
+    b7e4     b7e4      3cf     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o:(.debug_line)
+    bbb3     bbb3      440     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o:(.debug_line)
+    bff3     bff3      8cc     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o:(.debug_line)
+    c8bf     c8bf      548     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o:(.debug_line)
+    ce07     ce07      426     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o:(.debug_line)
+    d22d     d22d      5b2     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o:(.debug_line)
+    d7df     d7df      615     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o:(.debug_line)
+    ddf4     ddf4      4c6     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o:(.debug_line)
+    e2ba     e2ba      1f2     1         build/Core/Src/system_stm32f1xx.o:(.debug_line)
+    e4ac     e4ac      18f     1         build/Core/Src/os.o:(.debug_line)
+    e63b     e63b      555     1         build/Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_fir_f32.o:(.debug_line)
+    eb90     eb90      1b3     1         build/Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_fir_init_f32.o:(.debug_line)
+    ed43     ed43      3dc     1         build/Drivers/CMSIS/DSP/Source/MatrixFunctions/arm_mat_inverse_f32.o:(.debug_line)
+    f11f     f11f      1f1     1         build/Drivers/CMSIS/DSP/Source/MatrixFunctions/arm_mat_mult_f32.o:(.debug_line)
+    f310     f310      183     1         build/Drivers/CMSIS/DSP/Source/MatrixFunctions/arm_mat_trans_f32.o:(.debug_line)
+    f493     f493      186     1         build/Drivers/CMSIS/DSP/Source/MatrixFunctions/arm_mat_add_f32.o:(.debug_line)
+    f619     f619      1b9     1         build/Drivers/CMSIS/DSP/Source/StatisticsFunctions/arm_var_f32.o:(.debug_line)
+    f7d2     f7d2      192     1         build/Core/Src/gpio.o:(.debug_line)
+    f964     f964       8c     1         build/Hook.o:(.debug_line)
+    f9f0     f9f0      26b     1         build/Core/Src/stm32f1xx_hal_timebase_tim.o:(.debug_line)
+    fc5b     fc5b       96     1         build/RTOS/systemView/SEGGER/SEGGER_RTT_ASM_ARMv7M.o:(.debug_line)
+    fcf1     fcf1       6c     1         build/startup_stm32f103xb.o:(.debug_line)
+    fd5d     fd5d      1f5     1         lto.tmp:(.debug_line)
+       0        0      28a     1 .stack_sizes
+       0        0        5     1         build/RTOS/FreeRTOS/list.o:(.stack_sizes)
+       5        5        5     1         build/RTOS/FreeRTOS/list.o:(.stack_sizes)
+       a        a        5     1         build/RTOS/FreeRTOS/list.o:(.stack_sizes)
+       f        f        5     1         build/RTOS/FreeRTOS/list.o:(.stack_sizes)
+      14       14        5     1         build/RTOS/FreeRTOS/list.o:(.stack_sizes)
+      19       19        5     1         build/RTOS/FreeRTOS/queue.o:(.stack_sizes)
+      1e       1e        5     1         build/RTOS/FreeRTOS/queue.o:(.stack_sizes)
+      23       23        5     1         build/RTOS/FreeRTOS/queue.o:(.stack_sizes)
+      28       28        5     1         build/RTOS/FreeRTOS/queue.o:(.stack_sizes)
+      2d       2d        5     1         build/RTOS/FreeRTOS/queue.o:(.stack_sizes)
+      32       32        5     1         build/RTOS/FreeRTOS/queue.o:(.stack_sizes)
+      37       37        5     1         build/RTOS/FreeRTOS/queue.o:(.stack_sizes)
+      3c       3c        5     1         build/RTOS/FreeRTOS/queue.o:(.stack_sizes)
+      41       41        5     1         build/RTOS/FreeRTOS/queue.o:(.stack_sizes)
+      46       46        5     1         build/RTOS/FreeRTOS/queue.o:(.stack_sizes)
+      4b       4b        5     1         build/RTOS/FreeRTOS/tasks.o:(.stack_sizes)
+      50       50        5     1         build/RTOS/FreeRTOS/tasks.o:(.stack_sizes)
+      55       55        5     1         build/RTOS/FreeRTOS/tasks.o:(.stack_sizes)
+      5a       5a        5     1         build/RTOS/FreeRTOS/tasks.o:(.stack_sizes)
+      5f       5f        5     1         build/RTOS/FreeRTOS/tasks.o:(.stack_sizes)
+      64       64        5     1         build/RTOS/FreeRTOS/tasks.o:(.stack_sizes)
+      69       69        5     1         build/RTOS/FreeRTOS/tasks.o:(.stack_sizes)
+      6e       6e        5     1         build/RTOS/FreeRTOS/tasks.o:(.stack_sizes)
+      73       73        5     1         build/RTOS/FreeRTOS/tasks.o:(.stack_sizes)
+      78       78        5     1         build/RTOS/FreeRTOS/tasks.o:(.stack_sizes)
+      7d       7d        5     1         build/RTOS/FreeRTOS/tasks.o:(.stack_sizes)
+      82       82        5     1         build/RTOS/FreeRTOS/tasks.o:(.stack_sizes)
+      87       87        5     1         build/RTOS/FreeRTOS/tasks.o:(.stack_sizes)
+      8c       8c        5     1         build/RTOS/FreeRTOS/tasks.o:(.stack_sizes)
+      91       91        5     1         build/RTOS/FreeRTOS/tasks.o:(.stack_sizes)
+      96       96        5     1         build/RTOS/FreeRTOS/tasks.o:(.stack_sizes)
+      9b       9b        5     1         build/RTOS/FreeRTOS/tasks.o:(.stack_sizes)
+      a0       a0        5     1         build/RTOS/FreeRTOS/tasks.o:(.stack_sizes)
+      a5       a5        5     1         build/RTOS/FreeRTOS/tasks.o:(.stack_sizes)
+      aa       aa        5     1         build/RTOS/FreeRTOS/timers.o:(.stack_sizes)
+      af       af        5     1         build/RTOS/FreeRTOS/timers.o:(.stack_sizes)
+      b4       b4        5     1         build/RTOS/FreeRTOS/timers.o:(.stack_sizes)
+      b9       b9        5     1         build/RTOS/FreeRTOS/timers.o:(.stack_sizes)
+      be       be        5     1         build/RTOS/FreeRTOS/timers.o:(.stack_sizes)
+      c3       c3        5     1         build/RTOS/FreeRTOS/timers.o:(.stack_sizes)
+      c8       c8        5     1         build/RTOS/FreeRTOS/portable/GCC/ARM_CM3/port.o:(.stack_sizes)
+      cd       cd        5     1         build/RTOS/FreeRTOS/portable/GCC/ARM_CM3/port.o:(.stack_sizes)
+      d2       d2        5     1         build/RTOS/FreeRTOS/portable/GCC/ARM_CM3/port.o:(.stack_sizes)
+      d7       d7        5     1         build/RTOS/FreeRTOS/portable/GCC/ARM_CM3/port.o:(.stack_sizes)
+      dc       dc        5     1         build/RTOS/FreeRTOS/portable/GCC/ARM_CM3/port.o:(.stack_sizes)
+      e1       e1        5     1         build/RTOS/FreeRTOS/portable/GCC/ARM_CM3/port.o:(.stack_sizes)
+      e6       e6        5     1         build/RTOS/FreeRTOS/portable/GCC/ARM_CM3/port.o:(.stack_sizes)
+      eb       eb        5     1         build/RTOS/FreeRTOS/portable/GCC/ARM_CM3/port.o:(.stack_sizes)
+      f0       f0        5     1         build/RTOS/FreeRTOS/portable/GCC/ARM_CM3/port.o:(.stack_sizes)
+      f5       f5        5     1         build/RTOS/FreeRTOS/portable/GCC/ARM_CM3/port.o:(.stack_sizes)
+      fa       fa        5     1         build/RTOS/FreeRTOS/portable/GCC/ARM_CM3/port.o:(.stack_sizes)
+      ff       ff        5     1         build/RTOS/systemView/Config/SEGGER_SYSVIEW_Config_FreeRTOS.o:(.stack_sizes)
+     104      104        5     1         build/RTOS/systemView/Config/SEGGER_SYSVIEW_Config_FreeRTOS.o:(.stack_sizes)
+     109      109        5     1         build/RTOS/systemView/OS/SEGGER_SYSVIEW_FreeRTOS.o:(.stack_sizes)
+     10e      10e        5     1         build/RTOS/systemView/OS/SEGGER_SYSVIEW_FreeRTOS.o:(.stack_sizes)
+     113      113        5     1         build/RTOS/systemView/OS/SEGGER_SYSVIEW_FreeRTOS.o:(.stack_sizes)
+     118      118        5     1         build/RTOS/systemView/SEGGER/SEGGER_RTT.o:(.stack_sizes)
+     11d      11d        5     1         build/RTOS/systemView/SEGGER/SEGGER_RTT.o:(.stack_sizes)
+     122      122        5     1         build/RTOS/systemView/SEGGER/SEGGER_RTT.o:(.stack_sizes)
+     127      127        5     1         build/RTOS/systemView/SEGGER/SEGGER_RTT.o:(.stack_sizes)
+     12c      12c        5     1         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.stack_sizes)
+     131      131        5     1         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.stack_sizes)
+     136      136        5     1         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.stack_sizes)
+     13b      13b        5     1         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.stack_sizes)
+     140      140        5     1         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.stack_sizes)
+     145      145        5     1         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.stack_sizes)
+     14a      14a        5     1         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.stack_sizes)
+     14f      14f        5     1         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.stack_sizes)
+     154      154        5     1         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.stack_sizes)
+     159      159        5     1         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.stack_sizes)
+     15e      15e        5     1         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.stack_sizes)
+     163      163        5     1         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.stack_sizes)
+     168      168        5     1         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.stack_sizes)
+     16d      16d        5     1         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.stack_sizes)
+     172      172        5     1         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.stack_sizes)
+     177      177        5     1         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.stack_sizes)
+     17c      17c        5     1         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.stack_sizes)
+     181      181        5     1         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.stack_sizes)
+     186      186        5     1         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.stack_sizes)
+     18b      18b        5     1         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.stack_sizes)
+     190      190        5     1         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.stack_sizes)
+     195      195        5     1         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.stack_sizes)
+     19a      19a        5     1         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.stack_sizes)
+     19f      19f        5     1         build/RTOS/systemView/SEGGER/SEGGER_SYSVIEW.o:(.stack_sizes)
+     1a4      1a4        5     1         build/Core/Src/main.o:(.stack_sizes)
+     1a9      1a9        5     1         build/Core/Src/main.o:(.stack_sizes)
+     1ae      1ae        5     1         build/Core/Src/main.o:(.stack_sizes)
+     1b3      1b3        5     1         build/Core/Src/stm32f1xx_it.o:(.stack_sizes)
+     1b8      1b8        5     1         build/Core/Src/stm32f1xx_it.o:(.stack_sizes)
+     1bd      1bd        5     1         build/Core/Src/stm32f1xx_it.o:(.stack_sizes)
+     1c2      1c2        5     1         build/Core/Src/stm32f1xx_it.o:(.stack_sizes)
+     1c7      1c7        5     1         build/Core/Src/stm32f1xx_it.o:(.stack_sizes)
+     1cc      1cc        5     1         build/Core/Src/stm32f1xx_it.o:(.stack_sizes)
+     1d1      1d1        5     1         build/Core/Src/stm32f1xx_it.o:(.stack_sizes)
+     1d6      1d6        5     1         build/Core/Src/stm32f1xx_it.o:(.stack_sizes)
+     1db      1db        5     1         build/Core/Src/stm32f1xx_it.o:(.stack_sizes)
+     1e0      1e0        5     1         build/Core/Src/stm32f1xx_it.o:(.stack_sizes)
+     1e5      1e5        5     1         build/Core/Src/stm32f1xx_hal_msp.o:(.stack_sizes)
+     1ea      1ea        5     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o:(.stack_sizes)
+     1ef      1ef        5     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o:(.stack_sizes)
+     1f4      1f4        5     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o:(.stack_sizes)
+     1f9      1f9        5     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o:(.stack_sizes)
+     1fe      1fe        5     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o:(.stack_sizes)
+     203      203        5     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o:(.stack_sizes)
+     208      208        5     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o:(.stack_sizes)
+     20d      20d        5     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o:(.stack_sizes)
+     212      212        5     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o:(.stack_sizes)
+     217      217        5     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o:(.stack_sizes)
+     21c      21c        5     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o:(.stack_sizes)
+     221      221        5     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o:(.stack_sizes)
+     226      226        5     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o:(.stack_sizes)
+     22b      22b        5     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o:(.stack_sizes)
+     230      230        5     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o:(.stack_sizes)
+     235      235        5     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o:(.stack_sizes)
+     23a      23a        5     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o:(.stack_sizes)
+     23f      23f        5     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o:(.stack_sizes)
+     244      244        5     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o:(.stack_sizes)
+     249      249        5     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o:(.stack_sizes)
+     24e      24e        5     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o:(.stack_sizes)
+     253      253        5     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o:(.stack_sizes)
+     258      258        5     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o:(.stack_sizes)
+     25d      25d        5     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o:(.stack_sizes)
+     262      262        5     1         build/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o:(.stack_sizes)
+     267      267        5     1         build/Core/Src/system_stm32f1xx.o:(.stack_sizes)
+     26c      26c        5     1         build/Core/Src/os.o:(.stack_sizes)
+     271      271        5     1         build/Core/Src/os.o:(.stack_sizes)
+     276      276        5     1         build/Core/Src/os.o:(.stack_sizes)
+     27b      27b        5     1         build/Core/Src/gpio.o:(.stack_sizes)
+     280      280        5     1         build/Hook.o:(.stack_sizes)
+     285      285        5     1         build/Core/Src/stm32f1xx_hal_timebase_tim.o:(.stack_sizes)
+       0        0       48     1 .debug_aranges
+       0        0       20     1         build/RTOS/systemView/SEGGER/SEGGER_RTT_ASM_ARMv7M.o:(.debug_aranges)
+      20       20       28     1         build/startup_stm32f103xb.o:(.debug_aranges)
+       0        0     1fe0     4 .symtab
+       0        0     1fe0     4         <internal>:(.symtab)
+       0        0      10a     1 .shstrtab
+       0        0      10a     1         <internal>:(.shstrtab)
+       0        0     1a5c     1 .strtab
+       0        0     1a5c     1         <internal>:(.strtab)
