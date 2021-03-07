@@ -12,6 +12,7 @@
 #include "FreeRTOS.h"
 #include "main.h"
 #include "task.h"
+
 StaticTask_t xBlinkTaskTCB;
 StackType_t uxBlinkTaskStack[64];
 void blinky(void *param)
@@ -22,6 +23,7 @@ void blinky(void *param)
         vTaskDelay(200);
     }
 }
+
 
 extern "C"
 {
